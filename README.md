@@ -12,10 +12,10 @@ A CLI toolkit for setting up AI-assisted development workflows across repositori
 
 ```bash
 # One-time install (recommended)
-uv tool install ai-workflow-kit --from git+https://github.com/YOUR_USERNAME/ai-workflow-kit.git
+uv tool install ai-workflow-kit --from git+https://github.com/timjmitchell/ai-workflow-kit.git
 
 # Or run without installing
-uvx --from git+https://github.com/YOUR_USERNAME/ai-workflow-kit.git workflow init .
+uvx --from git+https://github.com/timjmitchell/ai-workflow-kit.git workflow init .
 ```
 
 ## Usage
@@ -88,7 +88,7 @@ After init, customize for your project:
 ## Upgrading
 
 ```bash
-uv tool install ai-workflow-kit --force --from git+https://github.com/YOUR_USERNAME/ai-workflow-kit.git
+uv tool install ai-workflow-kit --force --from git+https://github.com/timjmitchell/ai-workflow-kit.git
 ```
 
 ## Requirements
