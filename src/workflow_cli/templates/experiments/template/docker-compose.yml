@@ -1,0 +1,26 @@
+# Experiment Template - Docker Compose
+#
+# Usage:
+#   docker compose up --abort-on-container-exit
+#   docker compose down -v
+
+services:
+  experiment:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: experiment-template  # CHANGE: unique name per variant
+    environment:
+      # Add your environment variables here
+      - EXPERIMENT_MODE=${EXPERIMENT_MODE:-default}
+      # API Keys (from root .env)
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+    volumes:
+      # Input files
+      - ./input:/app/input:ro
+      - ./inputs:/app/inputs:ro
+      # Output results
+      - ./results:/app/results
+    # Uncomment if you need host network access
+    # network_mode: host
