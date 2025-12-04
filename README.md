@@ -75,7 +75,7 @@ workflow init . --force
 
 ### What Gets Added
 
-After running `workflow init`, your project will have:
+After running `workflow init` (IDE or shell), your project will have:
 
 **Claude Code Commands** (`.claude/commands/`):
 - `/prime` - Prime Claude with context about your codebase
